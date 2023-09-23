@@ -13,13 +13,14 @@
             --primary: #EB0028;
             --secondary: #000000;
             --tertiary: #ffffff;
+            --background: #232323;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: #000;
+            background: var(--background);
             color: var(--tertiary);
             font-weight: 100;
         }
@@ -46,10 +47,15 @@
             font-size: xx-large;
             font-weight: bold;
             margin: 0;
+            color: var(--primary);
+        }
+        .sup__x{
+            font-weight: bold;
+            color: var(--primary);
         }
 
         .heading__text {
-            background-color: #000;
+            background-color: var(--background);
             font-size: 25px;
             font-weight: lighter;
             margin-top: -5px;
@@ -57,29 +63,49 @@
 
         .body__container {
             padding: 20px;
-            text-align: justify;
+            text-align: start;
             margin-top: 30px;
-            margin: 5px;
             font-weight: 100;
+            margin: 15px ;
+            background: var(--secondary);
         }
 
         .body__content {
             margin-top: 25px;
             text-align: justify;
-        }
+            background: var(--secondary);
 
-        .body__text {
-            font-size: 20px;
-            font-weight: lighter;
+        }
+        .paragraph__container{
+            background: var(--secondary);
         }
 
         strong {
             color: var(--primary);
+            background-color: var(--secondary);
+        }
+        .body__name{
+            background-color: var(--secondary);
+        }
+
+        .highlight{
+            color: var(--primary);
+            background-color: var(--secondary);
+        }
+
+
+        
+        a{
+            text-decoration: none;
+        }
+
+        .background{
+            background-color: var(--secondary);
         }
 
         @media (max-width: 768px) {
             .heading {
-                font-size: large;
+                font-size: 30px;
             }
 
             .heading__text {
@@ -90,10 +116,6 @@
                 font-size: 18px;
             }
 
-            .body__text {
-                font-size: 16px;
-            }
-
             p {
                 font-size: 15px;
             }
@@ -102,60 +124,61 @@
 </head>
 
 <body>
-    <div class='header__container' style="color: var(--tertiary)">
+    <div class='header__container' >
         <div class='header__content'>
-            <h1 class='heading' style="color: var(--primary)">TED<sup style="color: var(--primary)">X</sup></h1>
+            <h1 class='heading'>TED<sup class="sup__x">X</sup></h1>
             <span class='heading__text'>DWIT College</span>
         </div>
     </div>
-    <div class='body__container' style="color: var(--tertiary)">
+    <div class='body__container'>
         <div class='body__content'>
-            <h1 class='body__name'>Dear <strong>Bijay Shrestha</strong>,</h1><br>
+            <h1 class='body__name '>Dear <strong>Bijay Shrestha</strong>,</h1><br>
         </div>
-        <p>
-            <span>
+        <p class="paragraph__container" >
+            <span class="background">
                 We are thrilled to welcome you to <strong>TEDxDWIT</strong> on September 30, 2023! Your participation on
                 this event is substantially favored, and we are excited to have you be a part of us for an afternoon of
                 inspiring talks thought-provoking discussions and meaningful connections. <br><br>
             </span>
 
-            <span>
+            <span class="background">
                 We want to express our gratitude in your enthusiasm and support as we embark on a adventure of
                 spreadable thoughts Your presence will absolutely contribute to the success of our event, and together,
                 we are able to explore progressive thoughts which have the capability to shape the future. <br><br>
             </span>
 
-            <span>
+            <span class="background">
                 To decorate your TEDx enjoy, we delivered a <strong>QR code card</strong> on the way to provide smooth
                 get entry to to event data, schedules and exceptional content. Simply scan the QR code at the entrance
                 or
                 throughout the venue to stay up to date and engaged with the event's offerings.<br><br>
             </span>
 
-            <span>
+            <span class="background">
                 We look forward to sharing this remarkable day with you and hope you leave TEDxDWIT feeling inspired,
                 enlightened, and motivated to make a positive impact on the world. Thank you for being a part of our
                 TEDx community, and we can't wait to see you on September 30th! <br><br>
             </span>
+        </p>
 
-            Venue:<span style="color: var(--primary);"> Deerwalk Complex </span> <br>
-            Location: <span style="color: var(--primary);">Sifal, Kathmandu, Nepal</span> <br>
-            Time: <span style="color: var(--primary);">03:00 P.M</span> <br>
-            Date: <span style="color: var(--primary);"> 30 <sup style="color: var(--primary)">th</sup> September,
+        <div class="footer__container background">
+            Venue:<span class="highlight"> Deerwalk Complex </span> <br>
+            Location: <span class="highlight">Sifal, Kathmandu, Nepal</span> <br>
+            Time: <span class="highlight">03:00 P.M</span> <br>
+            Date: <span class="highlight"> 30 <sup class="highlight">th</sup> September,
                 2023</span><br><br>
             For any queries or clarifications <br>
-            Contact :
-            <strong> +98******** / +98******** </strong> <br>
+            Contact :<strong> +98******** </strong> <br>
             Email:
-            <a style="text-decoration: none;"
+            <a 
                 href="https://mail.google.com/mail/u/2/?ogbl#inbox?compose=CllgCJqTflxmPvMgwmpDBkNcpKGHxGqhFbdBfLqXwvNhqHnxKjsdKHJFCJKxrgFSbFQSmqtgrpg"><strong>tedxdwitcollege@deerwalk.edu.np
                 </strong></a>
             <br><br>
 
             Warm regards,<br><br>
 
-            <span style="color: var(--primary);">TEDxDWIT Organizing Team</span>
-        </p>
+            <span class="highlight" >TEDxDWIT Organizing Team</span>
+        </div>
     </div>
 </body>
 
